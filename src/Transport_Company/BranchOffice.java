@@ -14,7 +14,7 @@ public class BranchOffice extends Office{
 		return isBranch;
 	}
 
-	public void setBrunch(boolean isBranch) {
+	public void setBranch(boolean isBranch) {
 		this.isBranch = isBranch;
 	}
 

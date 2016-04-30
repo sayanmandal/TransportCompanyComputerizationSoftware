@@ -10,10 +10,9 @@ public class Employee {
 	private String EmployeeBranchId;
 	private String EmpPassword;
 	private boolean isManager;
-	private String AssociatedBranchId;
 	
 	public Employee(String employeeName, String employeeId, String employeeAddress, String employeeMobileNo,
-			String employeeEmailId, String employeeBranchId, String empPassword) {
+			String employeeEmailId, String employeeBranchId, String empPassword,boolean isManager) {
 		super();
 		EmployeeName = employeeName;
 		EmployeeId = employeeId;
@@ -22,6 +21,7 @@ public class Employee {
 		EmployeeEmailId = employeeEmailId;
 		EmployeeBranchId = employeeBranchId;
 		EmpPassword = empPassword;
+		this.isManager = isManager;
 	}
 
 	public boolean isManager() {
@@ -30,14 +30,6 @@ public class Employee {
 
 	public void setManager(boolean isManager) {
 		this.isManager = isManager;
-	}
-
-	public String getAssociatedBranchId() {
-		return AssociatedBranchId;
-	}
-
-	public void setAssociatedBranchId(String associatedBranchId) {
-		AssociatedBranchId = associatedBranchId;
 	}
 
 	public String getEmployeeName() {

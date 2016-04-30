@@ -10,7 +10,7 @@ public class Office {
 	private long VolumeHandled;
 	private long RevenueGenerated;
 	private long IdleWaitingTime;
-	private long rate;
+	private static long rate;
 	
 	public Office(String branchId, String branchAddress, String branchPhone, int numberOfTrucks, int numberOfEmployees,
 			long volumeHandled, long revenueGenerated, long idleWaitingTime, long rate) {
